@@ -1,0 +1,64 @@
+Generated 320 synthetic segments across 2 quarters and 8 issue categories.
+Inserted into SQLite: 320 rows (db.count_segments == 320).
+
+--- Q4 2025 ---
+Filing deadline (10th day of next quarter): 2026-01-10
+Segments in this quarter's filing: 160
+Quarter total airtime: 680 minutes
+Invariant check: sum of per-category totals (680) == quarter total (680): OK
+Invariant check: every one of 160 segments appears exactly once: OK
+Least-airtime ranking (ascending):
+  1. Civic Engagement: 43 min
+  2. Economic Development: 53 min
+  3. Transportation: 58 min
+  4. Environment: 68 min
+  5. Health: 100 min
+  6. Public Safety: 108 min
+  7. Housing: 120 min
+  8. Education: 130 min
+Least-covered issue: Civic Engagement (43 min)
+Per-segment fields present: air_date, air_time, duration_min, narrative: OK
+
+--- Q1 2026 ---
+Filing deadline (10th day of next quarter): 2026-04-10
+Segments in this quarter's filing: 160
+Quarter total airtime: 689 minutes
+Invariant check: sum of per-category totals (689) == quarter total (689): OK
+Invariant check: every one of 160 segments appears exactly once: OK
+Least-airtime ranking (ascending):
+  1. Civic Engagement: 39 min
+  2. Economic Development: 52 min
+  3. Transportation: 65 min
+  4. Environment: 73 min
+  5. Health: 87 min
+  6. Public Safety: 103 min
+  7. Education: 134 min
+  8. Housing: 136 min
+Least-covered issue: Civic Engagement (39 min)
+Per-segment fields present: air_date, air_time, duration_min, narrative: OK
+
+Deadline assertion for Q4 2025: 2026-01-10 is the 10th. OK
+
+Deadline assertion for Q1 2026: 2026-04-10 is the 10th. OK
+
+Independent recomputation diff report
+========================================
+
+Q4 2025:
+  segment count: sql=160 naive=160 match=True
+  quarter total: sql=680 naive=680 match=True
+  category mismatches: 0
+
+Q1 2026:
+  segment count: sql=160 naive=160 match=True
+  quarter total: sql=689 naive=689 match=True
+  category mismatches: 0
+
+TOTAL MISMATCHES ACROSS ALL QUARTERS AND CATEGORIES: 0
+
+No tied category totals in either quarter: confirmed.
+Wrote C:\Users\Manas\Downloads\Total Job Application process flow\projects\quarterly-issues-programs-filing-compiler\scripts\..\docs\samples\issues_programs_list_2025_Q4.docx (39.6 KB)
+Wrote C:\Users\Manas\Downloads\Total Job Application process flow\projects\quarterly-issues-programs-filing-compiler\scripts\..\docs\samples\issues_programs_list_2026_Q1.docx (39.7 KB)
+Wrote C:\Users\Manas\Downloads\Total Job Application process flow\projects\quarterly-issues-programs-filing-compiler\scripts\..\docs\samples\coverage_deck.pptx (30.4 KB)
+
+Pipeline run complete.

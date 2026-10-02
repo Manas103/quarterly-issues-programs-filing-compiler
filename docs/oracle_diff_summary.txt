@@ -1,0 +1,16 @@
+Independent recomputation diff report
+========================================
+
+Q4 2025:
+  segment count: sql=160 naive=160 match=True
+  quarter total: sql=680 naive=680 match=True
+  category mismatches: 0
+
+Q1 2026:
+  segment count: sql=160 naive=160 match=True
+  quarter total: sql=689 naive=689 match=True
+  category mismatches: 0
+
+TOTAL MISMATCHES ACROSS ALL QUARTERS AND CATEGORIES: 0
+
+No tied category totals in either quarter: confirmed.

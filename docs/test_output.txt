@@ -1,0 +1,34 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.10, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\Manas\Downloads\Total Job Application process flow\projects\quarterly-issues-programs-filing-compiler\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Manas\Downloads\Total Job Application process flow\projects\quarterly-issues-programs-filing-compiler
+configfile: pyproject.toml
+collecting ... collected 25 items
+
+tests/test_compiler.py::test_filing_list_covers_every_segment_exactly_once PASSED [  4%]
+tests/test_compiler.py::test_every_segment_carries_the_four_required_fields PASSED [  8%]
+tests/test_compiler.py::test_filing_deadline_is_the_statutory_10th_of_next_quarter PASSED [ 12%]
+tests/test_compiler.py::test_conservation_identity_category_totals_sum_to_quarter_total PASSED [ 16%]
+tests/test_compiler.py::test_ranking_covers_all_8_categories_ascending PASSED [ 20%]
+tests/test_compiler.py::test_no_tied_category_totals PASSED              [ 24%]
+tests/test_compiler.py::test_ranking_tie_break_is_alphabetical_when_forced PASSED [ 28%]
+tests/test_deadlines.py::test_filing_deadline_lands_on_the_10th_of_the_next_quarter[2025-1-expected0] PASSED [ 32%]
+tests/test_deadlines.py::test_filing_deadline_lands_on_the_10th_of_the_next_quarter[2025-2-expected1] PASSED [ 36%]
+tests/test_deadlines.py::test_filing_deadline_lands_on_the_10th_of_the_next_quarter[2025-3-expected2] PASSED [ 40%]
+tests/test_deadlines.py::test_filing_deadline_lands_on_the_10th_of_the_next_quarter[2025-4-expected3] PASSED [ 44%]
+tests/test_deadlines.py::test_quarter_bounds PASSED                      [ 48%]
+tests/test_deadlines.py::test_invalid_quarter_number_rejected PASSED     [ 52%]
+tests/test_oracle_diff.py::test_zero_mismatches_across_all_quarters_and_categories PASSED [ 56%]
+tests/test_oracle_diff.py::test_oracle_disagrees_when_a_segment_is_deliberately_corrupted PASSED [ 60%]
+tests/test_reports.py::test_filing_document_contains_deadline_and_every_segment PASSED [ 64%]
+tests/test_reports.py::test_filing_document_is_derived_not_retyped PASSED [ 68%]
+tests/test_reports.py::test_coverage_deck_has_a_title_slide_and_one_ranking_slide_per_quarter PASSED [ 72%]
+tests/test_reports.py::test_coverage_deck_ranking_slide_matches_computed_ranking PASSED [ 76%]
+tests/test_seed_data.py::test_total_segment_count_is_320 PASSED          [ 80%]
+tests/test_seed_data.py::test_roughly_160_per_quarter PASSED             [ 84%]
+tests/test_seed_data.py::test_every_category_present_and_non_uniform_per_quarter PASSED [ 88%]
+tests/test_seed_data.py::test_deterministic_across_runs PASSED           [ 92%]
+tests/test_seed_data.py::test_every_segment_has_the_four_required_fields PASSED [ 96%]
+tests/test_seed_data.py::test_air_dates_fall_within_their_declared_quarter PASSED [100%]
+
+============================= 25 passed in 0.72s ==============================
